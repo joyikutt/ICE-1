@@ -44,8 +44,17 @@ public class Card
     public void setSuits(String suits) {
         this.suits = suits;
     }
-   //number
+  //number
+    void Card(int i) {
+        Card c1 = new Card();
+        c1.setValue(1 + (int) (Math.random() * 13));
+
+        //method for suits
+        c1.setSuits(suits);
+
+        Card[] magicHand = null;
+
+        magicHand[i] = c1;
     
-    //method for suits
-    
+}
 }
